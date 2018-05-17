@@ -1,0 +1,35 @@
+<table *ngIf="product && product.name">
+  <thead>
+    <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Release Date</th>
+    <th>Desc</th>
+    <th>Price</th>
+    <th>Rating</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>
+      <img src={{product.imageUrl}}>
+    </td>
+<td>
+  {{product.name}}
+</td>
+<td>
+    {{product.code}}
+  </td>
+  <td>
+      {{product.releaseDate}}
+    </td>
+    <td>
+        {{product.description}}
+      </td>
+      <td>
+          {{product.starRating}}
+        </td>
+      </tr>
+  </tbody>
+</table>

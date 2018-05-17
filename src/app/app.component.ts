@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import{Component, NgModule} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector:'app-root',
+    templateUrl:'./app.Component.html',
+    styleUrls:['./app.Component.css']
 })
-export class AppComponent {
-  title = 'app';
+
+export class AppComponent{
+    title={
+        primary:"Hi",
+        sec:'Hello'
+    }
+    //small expriment
+    constructor(){
+        setTimeout(()=>this.title.primary="Good",5000);
+    }
 }
